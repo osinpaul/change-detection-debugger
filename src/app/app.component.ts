@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import {Component} from "@angular/core";
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+      <div (mouseover)="0">Just a plain div</div>
+      <child-cmp></child-cmp>
+  `,
 })
 export class AppComponent {
-  title = 'change-detection';
 }
+
+
